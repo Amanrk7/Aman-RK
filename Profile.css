@@ -317,7 +317,7 @@ footer{
         width: 50%;
     }
     .projectnav{
-        height: 114vh;
+        height: 99vh;
     }
     .aboutimg{
         width: 30vw;
@@ -329,7 +329,10 @@ footer{
         margin-top: 33rem;
     }
     .aboutnav{
-        height: 180vh;
+        height: 136vh;
+    }
+    .servicesnav{
+        height: 84vh;
     }
 }
 @media (min-width:426px) and (max-width:768px) {
