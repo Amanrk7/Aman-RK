@@ -1,0 +1,350 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+    /* background: #042331; */
+    /* background-color: #e9e2e21a; */
+    background: white;
+    animation: animatebody 5.1s;
+}
+.svg{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 16rem;
+    left: 41rem;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: animate1 ease-in-out 5s 1 forwards;  */
+    animation-name: animate1;
+    /* animation-timing-function: ease-in-out; */
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.svg rect{
+    width: 100px;
+    height: 100px;
+    fill: none;
+    stroke-width: 100px;
+    /* stroke: #00adff; */
+    stroke: #0e6995;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 50%;
+    animation: animate 2s linear infinite;
+}
+.container{
+    /* background-color: blue; height: 3rem;width: 50%;padding-top: 2rem;margin: 1rem;
+     */
+    /* animation: animatediv 1s; */
+    opacity: 0;
+    /* transform: translate(0,-50rem); */
+    transform: translate(0, -54rem);
+    animation-name: animatediv;
+    animation-delay: 5.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes animate {
+    to{
+        stroke-dashoffset: 250%;
+    }
+}
+@keyframes animate1 {
+    to{
+        /* display: none; */
+        /* transform: translateX(-1000rem) */
+        opacity: 0;
+    }
+}
+@keyframes animatebody {
+    to{
+        background: #201f1f3a;
+        /* opacity: 0; */
+    }
+}
+@keyframes animatediv {
+    to{
+        /* background: #201f1f3a; */
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color: #edecec;
+    /* width: 18vw; */
+    font-family: 'Concert One', cursive;
+    transition : transform 0.3s ease-in;
+    position: absolute;
+}
+.main{
+    /* background-color: green; */
+    width: 100vw;
+    font-family: 'Concert One', cursive;
+    height: 95vh;
+}
+.container{
+    display: flex;
+}
+nav ul li{
+    margin: 5rem 1rem;
+    list-style: none;
+}
+nav ul li:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    padding: 3.9rem;
+    /* padding-right: 7rem; */
+    height: 95vh;
+}
+.content{
+    /* background-color: chartreuse; */
+    height: 76vh;
+    width: 75vw;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devpic img{
+    width: 19vw;
+    height: 76vh;
+}
+.about,.name{
+    font-family: 'Concert One', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Titillium Web', sans-serif;
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hello{
+    font-family: 'Concert One', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+}
+.name{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.about{
+    font-size: 1.5rem;
+}
+.buttons button{
+    padding: 0.7rem;
+    border-radius: 1.1rem;
+    margin: 1rem 0rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: #2196f3;
+}
+.buttons button:hover{
+    background-color: white;
+    color:#2196f3;
+}
+.cross{
+    width: 1.3rem;
+    margin-left:11.9rem;
+}
+.ham{
+    width: 1.3rem;
+}
+.icons{
+    position: absolute;
+    cursor: pointer;
+    top: 0.4rem;
+    left: 0.4rem;
+}
+.sidebarGo{
+    transform :translate(-20rem,0rem);
+    position: absolute;
+}
+footer{
+    background-color:#e5e5e5;
+    display:flex;
+    justify-content:space-around;
+    padding-top: 1.3rem;
+    padding-bottom: 0.7rem;
+}
+.ld{
+    width:2rem;
+}
+.twt{
+    width: 1.3rem;
+    border-radius: 3rem;
+}
+.loading{ 
+    position:fixed;
+    top:0;
+    height:2px;
+    background:transparent;
+    z-index:99999999999;
+    width:0%;
+    background-color: purple;
+}
+/* @keyframes animload {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+} */
+/* @media (max-width:320px) {
+
+    nav {
+        padding: 1.9rem;
+        padding-right: 6rem;
+        height: 29.2rem;
+    }
+    .devpic{
+        display: none;
+    }
+} */
+@media (max-width:320px) {
+    .svg{
+        left: 6.7rem
+    }
+}
+@media (min-width:321px) and (max-width:423px)  {
+    .svg{
+        left: 8.3rem;
+    }
+}    
+@media (min-width:424px) and (max-width:425px)   {
+    .svg{
+        left: 10.3rem;
+    }
+}
+@media (min-width:426px) and (max-width:768px)  {
+    .svg{
+        top: 14rem;
+        left: 21rem;
+    }
+}
+@media (min-width:769px) and (max-width:1024px)  {
+    .svg{
+        top: 15rem;
+        left: 28rem;
+    }
+}
+@media (min-width:1441px) and (max-width:3000px)  {
+    .svg{
+        top: 26rem;
+        left: 77rem;
+    }
+}
+@media (min-width:320px) and (max-width:425px)  {
+    .about {
+        font-size: 1.1rem;
+    }
+    /* nav {
+        padding: 0.9rem;
+        padding-right: 7rem;
+        height: 30rem;
+    } */
+    .devpic{
+        display: none;
+    }
+    footer{
+        margin-top: 12rem;
+    }
+}
+@media (min-width:1441px) and (max-width:4000px) {
+    .servicenav{
+        height: 70vh;
+    }
+}
+@media screen and (min-width:2560px){
+    nav {
+        padding: 3.9rem;
+        height: 85vh;
+        font-size: 2rem;
+    }
+    .cross {
+        width: 1.6rem;
+        margin-left: 15.9rem;
+    }
+}
+.css-sub1{
+    background-color: red ;height: 0.1rem;
+                         padding: 0.2rem 0.2rem;width: 93%;margin-top: 0.1rem;margin-bottom: 0.1rem;
+}
+.css-sub2{
+    
+    background-color: red ;height: 0.1rem;
+                         padding: 0.2rem 0.2rem;width: 83%;margin-top: 0.1rem;margin-bottom: 0.1rem;
+}
+.css-sub3{
+    background-color: red ;height: 0.1rem;
+                         padding: 0.2rem 0.2rem;width: 50%;margin-top: 0.1rem;margin-bottom: 0.1rem;
+}
+.aboutimg{
+    width: 8vw;
+    height: 19vh;
+    border-radius: 52rem;            
+}
+.aboutcss{
+    border: 2px solid;
+    width: 42rem;
+    margin-top: -1.6rem;
+    margin-left: 4rem;
+}
+@media (min-width:320px) and (max-width:425px) {
+    .css{
+        width: 10rem;
+    }
+    .css-sub1{
+        width: 82%;
+    }
+    .css-sub2{
+        width: 70%;
+    }
+    .css-sub3{
+        width: 50%;
+    }
+    .projectnav{
+        height: 114vh;
+    }
+    .aboutimg{
+        width: 30vw;
+    }
+    .aboutcss{
+        width: 12rem;
+    }
+    .aboutfooter{
+        margin-top: 33rem;
+    }
+    .aboutnav{
+        height: 180vh;
+    }
+}
+@media (min-width:426px) and (max-width:768px) {
+    .aboutfooter{
+        margin-top: 8rem;
+    }
+    .aboutcss{
+        width: 37rem;
+    }
+    .aboutimg{
+        width: 14vw;
+    }
+}
+@media (min-width:768px) and (max-width:1440px) {
+    .nav{
+        height: 80vh;
+    }
+}
